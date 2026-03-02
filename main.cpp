@@ -69,6 +69,14 @@ void markAttendance(AttendanceSession s) {
     students.close();
     sessionFile.close();
 }
+void displayAttendance(string filename) {
+    ifstream file(filename);
+    string line;
+    while (getline(file, line)) {
+        cout << line << endl;
+    }
+    file.close();
+}
 int main() {
     int choice;
     do {
