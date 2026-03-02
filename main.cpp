@@ -54,7 +54,17 @@ AttendanceSession createSession() {
     return s;
 }
 int main() {
-    addStudent();
-    viewStudents();
+    int choice;
+    do {
+        cout << "\n1. Add Student\n2. View Students\n3. Create Session\n4. Exit\nChoice: ";
+        cin >> choice;
+
+        if (choice == 1) addStudent();
+        else if (choice == 2) viewStudents();
+        else if (choice == 3) createSession();
+
+    } while (choice != 4);
+
     return 0;
 }
+
