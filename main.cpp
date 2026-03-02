@@ -34,7 +34,13 @@ void viewStudents() {
     }
     file.close();
 }
-
+class AttendanceSession {
+public:
+    string courseCode;
+    string date;
+    string startTime;
+    int duration;
+};
 int main() {
     addStudent();
     viewStudents();
